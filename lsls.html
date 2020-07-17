@@ -1,0 +1,61 @@
+dd.html
+<script type="text/javascript">
+	function UseSubmitForm() {
+		if (document.getElementById('FirstName').value == '') {
+			alert('Please enter your first name.')
+			document.getElementById('FirstName').focus()
+			return false;
+		}
+		if (document.getElementById('LastName').value == '') {
+			alert('Please enter your last name.')
+			document.getElementById('LastName').focus()
+			return false;
+		}
+		if (!check_email(document.getElementById('Email').value)) {
+			alert('Your email address is invalid.  Please try again.')
+			document.getElementById('Email').focus()
+			return false;
+		}
+		if (document.getElementById('Subject').value == '') {
+			alert('Please enter your Subject.')
+			document.getElementById('Subject').focus()
+			return false;
+		}
+        if (document.getElementById('AvailabilityDate').value == '') {
+			alert('Please enter Availability Date.')
+			document.getElementById('AvailabilityDate').focus()
+			return false;
+		}
+
+
+
+		var pattern = /^\d+$/;
+		if (pattern.test(document.getElementById('Phone').value) == false) {
+			alert('Invalid phone number.')
+			return false;
+		}
+
+        Email: document.getElementById('Email').value,
+				FirstName: document.getElementById('FirstName').value,
+				LastName: document.getElementById('LastName').value,
+				Phone: document.getElementById('Phone').value,
+				Subject: document.getElementById('Subject').value,
+
+
+				Landlord/Tenant: document.getElementById('Landlord/Tenant').value,
+				PropertyLocation: document.getElementById('PropertyLocation').value,
+				Address: document.getElementById('Address').value,
+				Bedrooms: document.getElementById('Bedrooms').value,
+                
+                Bedrooms: document.getElementById('Bedrooms').value,
+				PropertyLocation: document.getElementById('PropertyLocation').value,
+				Address: document.getElementById('Address').value,
+				Bedrooms: document.getElementById('Bedrooms').value,
+
+
+
+                Notes: document.getElementById('Notes').value,
+				ReturnMessage: document.getElementById('ReturnMessage').value,
+				EmailTitle: document.getElementById('EmailTitle').value,
+				Campaign: document.getElementById('Campaign').value,
+				LeadType: document.getElementById('LeadType').value
